@@ -1,11 +1,10 @@
-import SobreMim from './paginas/SobreMim';
-import  Inicio  from './paginas/inicio'
-console.log(window.location);
-
-const pagina = window.location.pathname === '/' ? <Inicio /> : <SobreMim/>
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
-  return pagina;
+  return 
+  <BrowserRouter>
+  
+  </BrowserRouter>
 }
 
 export default App;
