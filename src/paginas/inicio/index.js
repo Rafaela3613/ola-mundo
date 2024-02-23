@@ -5,12 +5,15 @@ import PostCard from "componentes/PostCard";
 
 export default function Inicio() {
     return (
-        <ul className={styles.posts}>
-            {posts.map((post) => (
-                <li key={post.id}>
-                    <PostCard post={post} />
-                </li>
-            ))}
-        </ul>
+        <div>
+            <ul className={styles.posts}>
+                {posts.map((post) => (
+                    <li key={post.id}>
+                        <PostCard post={post} />
+                    </li>
+                ))}
+            </ul>
+        </div>
+
     )
 }
